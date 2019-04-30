@@ -1,11 +1,11 @@
 Practice for loop.
 
-// Generate a simple select list by for
+// Generate a simple conversion table between Fahrenheit and Celsius by for loop
 
 <?php
-print '<select name="list">';
-for($min=1, $max=10;$min<50;$min+=10, $max+=10){
-    print "<option>I will buy $min - $max doughnuts.";
+for($f=-50;$f<=50;$f+=5) {
+    $c=($f-32)*5/9;
+    printf("%.2f degrees Fahrenheit = %.2f degrees Celsius.", $f, $c);
+    print "<br>";
 }
-print '</select>';
 ?>
