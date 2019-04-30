@@ -1,0 +1,10 @@
+Practice for loop.
+
+// Generate a simple select list by while
+
+$i=1;
+print '<select name="people">';
+while($i<=10) {
+    print "<option>$i</option>\n";
+    $i++; // to reach $i<=10 then stop this loop.
+print </select>;
