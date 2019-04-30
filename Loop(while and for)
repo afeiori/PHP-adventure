@@ -1,12 +1,13 @@
 Practice for loop.
 
-// Generate a simple select list by while
+// Generate a simple conversion table between Fahrenheit and Celsius by while loop
 
 <?php
-$i=1;
-print '<select name="people">';
-while($i<=10) {
-    print "<option>$i</option>\n";
-    $i++; // to reach $i<=10 then stop this loop.
-print </select>;
+$f=-50;
+while($f<=50){
+    $c=($f-32)*5/9;
+    printf("%.2f degrees Fahrenheit is %.2f degrees Celsius", $f, $c);
+    print "<br>";
+    $f+=5;
+}
 ?>
