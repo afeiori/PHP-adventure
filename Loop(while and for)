@@ -1,12 +1,11 @@
 Practice for loop.
 
-// Generate a simple select list by while
+// Generate a simple select list by for
 
 <?php
-$i=1;
-print '<select name="people">';
-while($i<=10) {
-    print "<option>$i</option>\n";
-    $i++; // to reach $i<=10 then stop this loop.
-print </select>;
+print '<select name="list">';
+for($min=1, $max=10;$min<50;$min+=10, $max+=10){
+    print "<option>I will buy $min - $max doughnuts.";
+}
+print '</select>';
 ?>
