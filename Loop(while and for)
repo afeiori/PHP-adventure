@@ -2,6 +2,7 @@ Practice for loop.
 
 // Generate a simple select list by while
 
+<?php
 $i=1;
 print '<select name="people">';
 while($i<=10) {
