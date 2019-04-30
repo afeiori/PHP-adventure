@@ -8,3 +8,4 @@ while($i<=10) {
     print "<option>$i</option>\n";
     $i++; // to reach $i<=10 then stop this loop.
 print </select>;
+?>
