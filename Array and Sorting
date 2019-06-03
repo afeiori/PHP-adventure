@@ -1,0 +1,22 @@
+//數量排序
+
+<?php
+$pop=array('New York, NY'=>8175133,
+    'Los Angeles, CA'=>3792621,
+    'Chicago, IL'=>2695598,
+    'Houston, TX'=>2100263,
+    'Philadelphia, PA'=>1526006,
+    'Phoenix, AZ'=>1445632,
+    'San Antonio, TX'=>1327407,
+    'San Diego, CA'=>1307402,
+    'Dallas, TX'=>1197816,
+    'San Jose, CA'=>945942);
+print "Population Table"."<br>";
+print "<table>"."<br>";
+asort($pop);
+foreach ($pop as $state=>$people_amount){
+    $state=explode(', ',$state);
+    print "<tr><td>$state[0]</td>"."<td> $state[1]: </td>"."<td>".number_format($people_amount)."</td></tr>";
+}
+print "</table>";
+?>
